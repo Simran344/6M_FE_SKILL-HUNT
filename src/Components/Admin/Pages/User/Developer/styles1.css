@@ -1,0 +1,122 @@
+/* Table container for responsiveness */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    padding: 10px;
+    display:flex;
+  }
+  .icons{
+    display:flex;
+    gap:10px;
+    margin-left:15px;
+  }
+  .disabled-screen{
+    opacity:0.3;
+  }
+  .icons i{
+    cursor:pointer;
+  }
+  .filters select {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    background: white;
+  }
+  .dropdown{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .dropdown1 select{
+    border:none;
+    background: transparent;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    outline:none;
+    appearance: none;
+    transform: translateX(5px);
+  }
+  .dropdown2 select{
+    border:none;
+    background: transparent;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    outline:none;
+    appearance: none;
+    transform: translateX(10px);
+  }
+  /* Modern table design */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+  }
+  /* Fixed table header */
+  thead {
+    position: sticky;
+    top: 0;
+    background-color: #f5f5f5;
+    z-index: 10;
+    width:100%;
+  }
+  
+  /* Table headers */
+  th {
+    padding: 12px;
+    background-color: #f5f5f5;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Table rows */
+  td {
+    padding: 12px;
+    color: #444;
+  }
+  
+  /* Horizontal lines only (no vertical borders) */
+  tr {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Last row shouldn't have a border */
+  tr:last-child {
+    border-bottom: none;
+  }
+  
+  /* Hover effect - like Google Classroom */
+  tr:hover {
+    background-color: #f0f0f0;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 768px) {
+    .filters {
+      flex-direction: column;
+    }
+    
+    table {
+      font-size: 14px;
+    }
+    th, td {
+      padding: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    table {
+      font-size: 12px;
+    }
+    th, td {
+      padding: 8px;
+    }
+  }
+  

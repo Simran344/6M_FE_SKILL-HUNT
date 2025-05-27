@@ -1,0 +1,39 @@
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 16px;
+  margin: 16px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width:60%;
+}
+
+.card-cont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.el-info{
+  margin-top:25px;
+}
+
+.card-body p {
+  margin: 6px 0;
+}
+
