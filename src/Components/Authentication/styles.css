@@ -9,7 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: auto;
     background: url('/assets/img/log.jpg') no-repeat center center/cover;
   }
   .loader-wrapper{

@@ -80,9 +80,6 @@ export default function Log(){
           <input type="password" minLength={2} className="form-control" id="password" placeholder="Password" onChange={changePassword} value={password} required />
           <label htmlFor="password">Password</label>
           </div>
-          <div className="forgot-section">
-            <a href="#">Forgot password?</a>
-          </div>
 
           <button type="submit" className="b1">Login</button>
         </form>
