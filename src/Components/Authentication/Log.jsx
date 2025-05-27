@@ -73,7 +73,7 @@ export default function Log(){
         <form onSubmit={submitForm}>
          
           <div className="form-floating">
-          <input type="email" pattern="/^[a-zA-Z0-9/_/./-]+/@+[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/" className="form-control" id="subject"  placeholder="Email" onChange={changeEmail} value={email} required />
+          <input type="email" className="form-control" id="subject"  placeholder="Email" onChange={changeEmail} value={email} required />
           <label htmlFor="subject">Email</label>
           </div>
           <div className="form-floating">
