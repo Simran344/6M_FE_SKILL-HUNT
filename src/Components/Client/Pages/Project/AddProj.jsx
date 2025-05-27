@@ -86,10 +86,10 @@ export default function AddProj(){
   return (
     <>
     <PageTitle children="Project"/>
-    <div className="enq">
+    <div className="p">
        <div className="maina">
        <PulseLoader color="hsla(211, 100.00%, 50.00%, 0.80)" loading={load}></PulseLoader></div>
-      <div className={`enquiry ${load==true && "d-none"}`}>
+      <div className={`adpro ${load==true && "d-none"} mt-5 mb-5`}>
         <h1 style={{color:"skyblue"}}>Add Project</h1>
 
         <form onSubmit={handleSubmit}>

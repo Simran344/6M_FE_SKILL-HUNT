@@ -3,29 +3,29 @@ import ApiServices from '../../../ApiServices/ApiServices';
 import { useEffect, useState } from 'react';
 import Swal from 'sweetalert2';
 import { toast } from 'react-toastify';
-
+import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import ResponsivePagination from 'react-responsive-pagination';
 import 'react-responsive-pagination/themes/classic-light-dark.css';
-export default function RejectBid() {
+export default function AcceptedBid() {
     const [bid, setBid] = useState([])
-   
+    
     const LIMIT = 4
     useEffect(() => {
         fetchBid()
-    },)
+    },[])
 
     const fetchBid = () => {
-        let status = 3
-         let addedById=sessionStorage.getItem("userId")
-        let formData = { status: status, limit: LIMIT, currentPage: currentPage,addedById:addedById }
+        let status = 2
+        let addedById=sessionStorage.getItem("userId")
+        let formData = { status: status,addedById:addedById}
 
         ApiServices.bidAll(formData)
             .then((res) => {
                 if (res.data.success) {
                     toast.success(res.data.message)
                     setBid(res.data.bidData)
-                   
+                    
                 }
                 else {
                     toast.error(res.data.message)
@@ -38,9 +38,10 @@ export default function RejectBid() {
 
     return (
         <>
-            <PageTitle>Rejected Bids</PageTitle>
+            <PageTitle>Accepted Bids</PageTitle>
 
-             <div className="container my-3 mx-auto justify-content-center">
+
+            <div className="container my-3 mx-auto justify-content-center">
 
                 <div className="row justify-content-center gy-4 history-container ">
                         <div className="col"> 
@@ -56,7 +57,7 @@ export default function RejectBid() {
                                     <h5 className="card-title">Budget: {ele?.bidAmount}</h5>
                                     <h5 className="card-title">Duration: {ele?.duration}</h5>
                                    
-                                   
+                                    <Link className="btn btn-info" to={"/developer/upload/"+ ele.projectId._id+ "/"+ ele.clientId._id}>Upload Project</Link> 
                                     
                                 </div>
                                 </>
@@ -71,4 +72,4 @@ export default function RejectBid() {
 
         </>
     )
-}                          
+}

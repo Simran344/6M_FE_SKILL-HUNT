@@ -14,7 +14,7 @@ export default function AcceptedBid() {
     const LIMIT = 4
     useEffect(() => {
         fetchBid()
-    },)
+    },[])
 
     const fetchBid = () => {
         let status = 2

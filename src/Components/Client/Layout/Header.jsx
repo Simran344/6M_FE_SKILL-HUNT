@@ -79,9 +79,6 @@ export default function Header(){
                 <Link to="/client/dashboards" className={`nav-item nav-link ${path=="/client/dashboards" && "active"} `} style={{transform:"translateX(-5px)"}}>
                  Dashboard
                 </Link>
-                <Link to="/client/bidding" className={`nav-item nav-link ${path=="/client/bidding" && "active"} `} style={{transform:"translateX(-5px)"}}>
-                 Bidding
-                </Link>
                 <div className="nav-item dropdown">
                   <Link
                     to="#"
@@ -102,9 +99,6 @@ export default function Header(){
                     </div>
                  
                
-                <Link to="/client/history" className={`nav-item nav-link ${path=="/client/history" && "active"}`} style={{transform:"translateX(-5px)"}}>
-                History
-                </Link>
                 <Link to="/client/enquiry" className={`nav-item nav-link ${path=="/client/enquiry" && "active"}`} style={{transform:"translateX(-10px)"}}>
                   Enquiry
                 </Link>
