@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {ToastContainer, toast} from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import './App.css'
+import "./Add.css"
 import PageTitle from '../../Layout/PageTitle';
 import ApiServices from '../../../ApiServices/ApiServices';
 function Add() {
@@ -40,25 +40,22 @@ function Add() {
   return (
     <>
     <PageTitle children="Add and Manage Technology"/>
-    <div className="App">
+    <div className="App AAP">
 
       {/* Add Form */}
-      <div className="form-box">
-        <h3>Add</h3>
-        <div className="form-group">
+        
+        <div className="add mx-auto">
+          <h3>Add</h3>
           <label>Name:</label>
         <input value={title} onChange={(e) => setTitle(e.target.value)} required />
-        </div>
-        <br />
-        <div className="form-group">
         <label>Thumbnail: </label>
         <input type="file" value={logoName} onChange={setImage} required/>
-        </div>
-        <br />
+       
         
-        <button className="btn btn-primary" onClick={handleAdd}>Add</button>
+        <button className="bu" onClick={handleAdd}>Add</button> 
+        </div>
       </div>
-    </div>
+    
     </>
     )
 
