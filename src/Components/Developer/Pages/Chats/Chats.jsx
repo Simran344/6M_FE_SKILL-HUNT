@@ -89,15 +89,14 @@ const Chats = () => {
 
   useEffect(() => {
     socket.on('receiveMessage', (msg) => {
-      if (
-        selectedUser &&
-        (msg.senderId === selectedUser.userId._id ||
-          msg.receiverId === selectedUser.userId._id)
-      ) {
-        setChat((prev) => [...prev, { sender: 'other', text: msg.text }]);
-      }
-    });
-    return () => socket.off('receiveMessage');
+      if(msg.senderId===userId) return;
+            if (
+              selectedUser && msg.senderId === selectedUser.userId._id 
+            ) {
+              setChat((prev) => [...prev, { sender: 'other', text: msg.text }]);
+            }
+          });
+          return () => socket.off('receiveMessage');
   }, [selectedUser]);
 
   return (
