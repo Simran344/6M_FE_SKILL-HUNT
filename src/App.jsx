@@ -35,7 +35,6 @@ import Enquiry from './Components/Client/Pages/Enquiry/Enquiry'
 import Register from './Components/Authentication/Register'
 import Bi from './Components/Developer/Pages/BIO/Bi'
 import Dashboard1 from './Components/Developer/Pages/Dash/Dashboard1'
-import History from './Components/Client/Pages/History/History'
 import ViewBidding from './Components/Client/Pages/Bidding/ViewBidding'
 import Project2 from './Components/Developer/Pages/Projects/Project2'
 import Canva from './Components/Developer/Pages/Chats/Chats'
@@ -90,7 +89,6 @@ function App() {
         <Route path="/client/projects" element={<Proj/>}/>
         <Route path="/client/proj/:_id" element={<EditProj/>}/>
         <Route path="/client/enquiry" element={<Enquiry/>}/>
-        <Route path="/client/history" element={<History/>}/>
         <Route path="/client/viewBid/:projectId" element={<ViewBidding/>}/>
         <Route path="/client/contact" element={<Contact/>}/>
         <Route path="/client/dashboards" element={<Dashboards/>}/>
