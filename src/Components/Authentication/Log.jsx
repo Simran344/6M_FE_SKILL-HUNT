@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { PulseLoader } from "react-spinners";
 import { toast } from "react-toastify";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from "axios"
 import { RsvpTwoTone } from "@mui/icons-material";
 import ApiServices from "../ApiServices/ApiServices";
@@ -77,8 +77,11 @@ export default function Log(){
           <label htmlFor="subject">Email</label>
           </div>
           <div className="form-floating">
-          <input type="password" minLength={2} className="form-control" id="password" placeholder="Password" onChange={changePassword} value={password} required />
+          <input type="password"  className="form-control" id="password" placeholder="Password" onChange={changePassword} value={password} required />
           <label htmlFor="password">Password</label>
+          </div>
+          <div className="forgot-section">
+            <Link to="/register">Forgot password?</Link>
           </div>
 
           <button type="submit" className="b1">Login</button>
