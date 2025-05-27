@@ -81,7 +81,7 @@ export default function Log(){
           <label htmlFor="password">Password</label>
           </div>
           <div className="forgot-section">
-            <Link to="/register">Forgot password?</Link>
+            <Link to="/register">Register...</Link>
           </div>
 
           <button type="submit" className="b1">Login</button>
