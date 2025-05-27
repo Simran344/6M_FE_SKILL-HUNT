@@ -5,7 +5,6 @@ export default function About(){
     return(
       <>
       <main className="main">
-        <PageTitle>About Us</PageTitle>
       {/* About Start */}
       <div className="container-fluid about bg-light py-5">
         <div className="container py-5">
