@@ -1,5 +1,5 @@
 import axios from "axios";
-const BASE_URL="http://localhost:5000"
+const BASE_URL="https://6-m-be-skill-hunt-iauh-git-main-simrans-projects-eb1cee78.vercel.app"
 
 class ApiServices{
     getToken(){
