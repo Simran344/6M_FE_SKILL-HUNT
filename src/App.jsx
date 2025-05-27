@@ -96,7 +96,7 @@ function App() {
          <Route path="/client/ratings/:developerId/:clientId/:projectId" element={<Rating/>}/>
          <Route path="/client/chat" element={<Chatcanva/>}/>     
      </Route>
-     <Route path="/about" element={<About/>}/>
+     <Route path="/" element={<About/>}/>
 
      <Route path="/developer" element={<Layout/>}>
         
