@@ -165,7 +165,7 @@ export default function Dashboards() {
                         className="counter-value fs-1 fw-bold text-dark"
                         data-toggle="counter-up"
                       >
-                        300
+                        5
                       </span>
                       <h4
                         className="text-dark fs-1 mb-0"
@@ -186,7 +186,7 @@ export default function Dashboards() {
                         className="counter-value fs-1 fw-bold text-white"
                         data-toggle="counter-up"
                       >
-                        1,200
+                        10
                       </span>
                       <h4
                         className="text-white fs-1 mb-0"
@@ -207,7 +207,7 @@ export default function Dashboards() {
                         className="counter-value fs-1 fw-bold text-dark"
                         data-toggle="counter-up"
                       >
-                        2,500
+                        10
                       </span>
                       <h4
                         className="text-dark fs-1 mb-0"
@@ -228,7 +228,7 @@ export default function Dashboards() {
                         className="counter-value fs-1 fw-bold text-white"
                         data-toggle="counter-up"
                       >
-                        1,000
+                        5
                       </span>
                       <h4
                         className="text-white fs-1 mb-0"

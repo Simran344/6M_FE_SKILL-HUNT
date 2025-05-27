@@ -133,13 +133,13 @@ export default function Dashboard1() {
                         className="counter-value fs-1 fw-bold text-dark"
                         data-toggle="counter-up"
                       >
-                        32
+                        8
                       </span>
                       <h4
                         className="text-dark fs-1 mb-0"
                         style={{ fontWeight: 600, fontSize: 25 }}
                       >
-                        k+
+                        +
                       </h4>
                     </div>
                     <div className="w-100 d-flex align-items-center justify-content-center">
@@ -154,7 +154,7 @@ export default function Dashboard1() {
                         className="counter-value fs-1 fw-bold text-white"
                         data-toggle="counter-up"
                       >
-                        100
+                        6
                       </span>
                       <h4
                         className="text-white fs-1 mb-0"
@@ -175,7 +175,7 @@ export default function Dashboard1() {
                         className="counter-value fs-1 fw-bold text-dark"
                         data-toggle="counter-up"
                       >
-                        97K
+                        5
                       </span>
                       <h4
                         className="text-dark fs-1 mb-0"
@@ -196,7 +196,7 @@ export default function Dashboard1() {
                         className="counter-value fs-1 fw-bold text-white"
                         data-toggle="counter-up"
                       >
-                        70
+                        6
                       </span>
                       <h4
                         className="text-white fs-1 mb-0"

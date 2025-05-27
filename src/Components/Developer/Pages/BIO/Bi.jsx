@@ -5,11 +5,13 @@ import PageTitle from "../../Layouts/PageTitle"
 import { PulseLoader } from "react-spinners"
 import Swal from "sweetalert2"
 import { toast } from "react-toastify"
+import { useNavigate } from "react-router-dom"
 export default function Bi(){
        
        const[contact,setContact]=useState("")
        const[picName,setPicName]=useState("") 
        const[pic,setPic]=useState({})
+       const nav=useNavigate()
        useEffect(()=>{
            fetchDev()
        },[])
@@ -90,7 +92,7 @@ return(
         
        
             <div className="button-group">
-                <button type="submit" className="bu">Submit</button>
+                <button type="submit" className="bu" onClick={()=>nav("/developer/dashboard1")}>Submit</button>
             </div>
         </form>
 

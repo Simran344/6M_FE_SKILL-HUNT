@@ -5,6 +5,7 @@ import PageTitle from "../../Layout/PageTitle"
 import { PulseLoader } from "react-spinners"
 import Swal from "sweetalert2"
 import { toast } from "react-toastify"
+import { useNavigate } from "react-router-dom"
 export default function Bio(){
        const[company,setCompanyName]=useState("")
        const[contact,setContact]=useState("")
@@ -13,6 +14,7 @@ export default function Bio(){
        const[country,setCountry]=useState("")
        const[picName,setPicName]=useState("")
        const[pic,setPic]=useState({})
+       const nav=useNavigate()
        useEffect(()=>{
             fetch("https://restcountries.com/v3.1/all")
       .then((res) => res.json())
@@ -132,7 +134,7 @@ return(
         
        
             <div className="button-group">
-                <button type="submit" className="bu">Submit</button>
+                <button type="submit" className="bu" onClick={()=>nav("/client/dashboards")}>Submit</button>
             </div>
         </form>
 
