@@ -77,7 +77,7 @@ export default function Log(){
           <label htmlFor="subject">Email</label>
           </div>
           <div className="form-floating">
-          <input type="password" minLength={8} className="form-control" id="password" placeholder="Password" onChange={changePassword} value={password} required />
+          <input type="password" minLength={2} className="form-control" id="password" placeholder="Password" onChange={changePassword} value={password} required />
           <label htmlFor="password">Password</label>
           </div>
           <div className="forgot-section">

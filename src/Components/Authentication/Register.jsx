@@ -138,7 +138,7 @@ const Register = () => {
                 <label htmlFor="email">Email: </label>
               </div>
               <div className="form-floating">
-                <input type="password" minLength={8} required="" value={password} onChange={(e) => { setPassword(e.target.value) }} placeholder="Enter your password" className="form-control" id="password" />
+                <input type="password" minLength={2} required="" value={password} onChange={(e) => { setPassword(e.target.value) }} placeholder="Enter your password" className="form-control" id="password" />
                 <label htmlFor="password">Password: </label>
               </div>
               <div className="form-floating">
