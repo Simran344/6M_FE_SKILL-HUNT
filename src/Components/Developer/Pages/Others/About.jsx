@@ -4,7 +4,8 @@ import PageTitle from "../../Layouts/PageTitle";
 export default function About(){
     return(
       <>
-      <main className="main">
+      <main className="maina">
+        <PageTitle>About Us</PageTitle>
       {/* About Start */}
       <div className="container-fluid about bg-light py-5">
         <div className="container py-5">
