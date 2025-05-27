@@ -15,18 +15,23 @@ export default function DevRating() {
     
   }, []);
   useEffect(()=>{
+    if(!!developerId){
      fetchRating()
-  },[])
+    }
+  },[developerId])
   const fetchDev=()=>{
     let _id=sessionStorage.getItem("userId") 
     let formData={userId:_id}
     ApiServices.devSingle(formData)
     .then((res)=>{
+        console.log(res);
+        
         if(res.data.success){
             toast.success(res.data.message)
+            console.log(res.data.data);
+            console.log(res.data.data._id);
             
-            setDeveloperId(res.data._id)
-            
+            setDeveloperId(res.data.data._id)
         }
         else{
             toast.error(res.data.message)
