@@ -156,6 +156,9 @@ export default function Header() {
                   
                     </div>
                     </div>
+                 <Link to="/developer/rating" className={`nav-item nav-link ${path == "/developer/rating" && "active"}`} style={{ transform: "translateX(-5px)" }}>
+                  View Rating
+                </Link>   
                 <Link to="/developer/enquirys" className={`nav-item nav-link ${path == "/developer/enquirys" && "active"}`} style={{ transform: "translateX(-5px)" }}>
                   Enquiry
                 </Link>

@@ -76,7 +76,7 @@ function App() {
         <Route path="/admin/bid" element={<ReviewBid/>}/>
         <Route path="/admin/rating" element={<ViewRating/>}/>
      </Route>
-     <Route path="/login" element={<Log/>}/>
+     <Route path="/" element={<Log/>}/>
      <Route path="/register" element={<Register/>}/>
      <Route path="/admin/client/single/:_id" element={<Singles/>}/>
      <Route path="/admin/dev/single/:_id" element={<Singl/>}/>
@@ -96,7 +96,7 @@ function App() {
          <Route path="/client/ratings/:developerId/:clientId/:projectId" element={<Rating/>}/>
          <Route path="/client/chat" element={<Chatcanva/>}/>     
      </Route>
-     <Route path="/" element={<About/>}/>
+     {/* <Route path="/" element={<About/>}/> */}
 
      <Route path="/developer" element={<Layout/>}>
         
