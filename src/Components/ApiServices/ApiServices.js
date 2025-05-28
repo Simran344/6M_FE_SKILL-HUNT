@@ -1,5 +1,5 @@
 import axios from "axios";
-const BASE_URL="https://6-m-be-skill-hunt-auvz.vercel.app"
+const BASE_URL="http://localhost:5000"
 
 class ApiServices{
     getToken(){
